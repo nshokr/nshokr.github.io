@@ -1,42 +1,236 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="theme-color" content="#000" />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta property="og:site_name" content="Shokr" />
-    <meta property="og:title" content="I am Full Stack Python Developer" />
-    <meta property="og:url" content="https://shokr.github.io/" />
-    <meta property="og:image" content="https://shokr.github.io/pic.jpg" />
-    <meta property="og:description" content="It’s not a bug – it’s an undocumented feature." />
+<html>
 
-    <title>Shokr</title>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MUHAMMED SHOKR</title>
     <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css" /> 
-    <link href="style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="container">
-      <output></output>
-      <div id="input-line" class="input-line">
-        <div class="prompt"></div><div><input class="cmdline" autofocus /></div>
-      </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <style type="text/css" media="screen">
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            width: 1000px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container .card {
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .container .card .icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f00;
+            transition: 0.7s;
+            z-index: 1;
+        }
+
+        .container .card:nth-child(1) .icon {
+            background: #e07768;
+        }
+
+        .container .card:nth-child(2) .icon {
+            background: #6eadd4;
+        }
+
+        .container .card:nth-child(3) .icon {
+            background: #4aada9;
+        }
+
+
+        .container .card .icon .fa {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            transition: 0.7s;
+            color: #fff;
+        }
+
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            transition: 0.7s;
+            color: #fff;
+        }
+
+        .container .card .face {
+            width: 300px;
+            height: 200px;
+            transition: 0.5s;
+        }
+
+        .container .card .face.face1 {
+            position: relative;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            transform: translateY(100px);
+        }
+
+        .container .card:hover .face.face1 {
+            background: #ff0057;
+            transform: translateY(0px);
+        }
+
+        .container .card .face.face1 .content {
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .container .card:hover .face.face1 .content {
+            opacity: 1;
+        }
+
+        .container .card .face.face1 .content i {
+            max-width: 100px;
+        }
+
+        .container .card .face.face2 {
+            position: relative;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            transform: translateY(-100px);
+        }
+
+        .container .card:hover .face.face2 {
+            transform: translateY(0);
+        }
+
+        .container .card .face.face2 .content p {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #414141;
+        }
+
+        .container .card .face.face2 .content h3 {
+            margin: 0 0 10px 0;
+            padding: 0;
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            color: #414141;
+        }
+
+        .container a {
+            text-decoration: none;
+            color: #414141;
+        }
+    </style>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <div class="icon">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h3>
+                    <a href="https://www.linkedin.com/in/muhammedshokr/" target="_blank">muhammedshokr</a>
+                </h3>
+                <p>This is where I network and build my professional portfolio.</p>
+            </div>
+        </div>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="commands.js"></script>
-    <script src="app.js"></script>
-    
-    <div class="clock-container">
-      <svg viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="45"/>
-        <g>
-          <rect class="hour" x="47.5" y="12.5" width="5" height="40" rx="2.5" ry="2.55" />
-          <rect class="min" x="48.5" y="12.5" width="3" height="40" rx="2" ry="2"/>
-          <line class="sec" x1="50" y1="50" x2="50" y2="16" />
-        </g>
-      </svg>
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <div class="icon">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h3>
+                    <a href="https://twitter.com/MuhammedShokr" target="_blank">@MuhammedShokr</a>
+                </h3>
+                <p>This is where I read news and network with different social groups.</p>
+            </div>
+        </div>
     </div>
-    
-  </body>
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <div class="icon">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h3>
+                    <a href="https://www.facebook.com/Muhammed.R.Shokr/" target="_blank">Muhammed Shokr</a>
+                </h3>
+                <p>This is where I have fun and share anything.</p>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <div class="icon">
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <h3>
+                    <a href="https://github.com/Shokr" target="_blank">Shokr</a>
+                </h3>
+                <p>This is where I share code and work on projects.</p>
+            </div>
+        </div>
+    </div>
+    -->
+
+</div>
+</body>
+
 </html>
