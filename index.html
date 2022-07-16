@@ -1,3 +1,121 @@
+<!-- engagement -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://wedding.omartoma.me/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+    <title>Mohamed & Engy</title>
+    
+    
+    <link rel="icon" href="favicon.ico">
+    
+    <script src="https://t.jitsu.com/s/lib.js"
+        data-key="js.7jtq0ulu8b0mh5uv941pzz.h6a9qk2qan5fvddzj7nkvb"
+        data-init-only="false"
+        defer></script>
+    <script>window.jitsu = window.jitsu || (function(){(window.jitsuQ = window.jitsuQ || []).push(arguments);})</script>
+    
+
+     <style>
+        @import url(https://fonts.googleapis.com/css?family=Bad+Script);
+
+            ul {
+            font-family: "Bad Script";
+            color: goldenrod;
+            text-align: center;
+            }
+
+     </style>
+
+
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<div class="container">
+    <div class="text-container">
+        <div class="color-8">
+            <div class="link link--manko"><div class="clickable">Mohamed</div> and <div class="clickable">Engy</div> engagement <span>The one</span> <span>and forever love</span></div>
+        </div>
+    </div>
+    <div id="countdownx">
+        <ul>
+            <li><span id="daysx"></span>days</li>
+            <li><span id="hoursx"></span>Hours</li>
+            <li><span id="minutesx"></span>Minutes</li>
+            <li><span id="secondsx"></span>Seconds</li>
+        </ul>
+    </div>
+    <div id="content" class="emoji">
+        <span>🥳</span>
+        <span>🎉</span>
+        <span>🎂</span>
+    </div>
+    
+    <h1 style="color: gold;">
+            قاعة سيفن سكاي | 
+            المنصورة - نادي القوات المسلحة - كورنيش النيل - طلخا
+
+            <i class="fa-solid fa-location-dot"></i>
+    </h1>
+
+</div>
+<script src="http://wedding.omartoma.me/script.min.js"></script>
+<script>
+    (function () {
+    const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+   
+    let offer= "Aug 12, 2022 19:00:00",
+        countDownx = new Date(offer).getTime(),
+        x = setInterval(function() {    
+   
+          let now = new Date().getTime(), distance = countDownx - now;
+   
+            document.getElementById("daysx").innerText = Math.floor(distance / (day)),
+            document.getElementById("hoursx").innerText = Math.floor((distance % (day)) / (hour)),
+            document.getElementById("minutesx").innerText = Math.floor((distance % (hour)) / (minute)),
+            document.getElementById("secondsx").innerText = Math.floor((distance % (minute)) / second);
+   
+          //do something later when date is reached
+          if (distance < 0) {
+            let headline = document.getElementById("headline"),
+                countdownx = document.getElementById("countdownx"),
+                content = document.getElementById("content");
+   
+            headline.innerText = "Ohhh ya! It's time";
+            countdownx.style.display = "none";
+            content.style.display = "block";
+   
+            clearInterval(x);
+          }
+          //seconds
+        }, 0)
+    }());
+</script>
+    
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- 
 <!DOCTYPE html>
 <html>
 
@@ -136,7 +254,6 @@ p {
 
 <body>
 
-<!-- The front is based on of my SVG link hover effect https://codepen.io/Zeaklous/pen/kyGqm -->
 
 <div class="container">
     <div class="card">
@@ -160,18 +277,17 @@ p {
           <p><span class="property">Facebook: </span><a target="_blank" href="https://www.facebook.com/Muhammed.R.Shokr/">Muhammed Shokr</a></p>
           <p><span class="property">Instagram: </span><a target="_blank" href="https://www.instagram.com/muhammedshokr/">muhammedshokr</a></p>
           <p><span class="property">Phone: </span><a target="_blank" href="https://wa.me/201289859363">01289859363</a></p>
-          <!--<p><span class="property">Email: </span><a target="_blank" href="mailto:mohammedshokr2014@gmail.com">mohammedshokr2014@gmail.com</a></p>-->
+
         </div>
       </div>
   
     </div>
   </div>
-<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-<!--
-<script async defer src="https://custom.domain.com/latest.js"></script>
-<noscript><img src="https://custom.domain.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
--->
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
 </body>
 
 </html>
+
+ -->
