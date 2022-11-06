@@ -24,6 +24,23 @@
     <script>window.jitsu = window.jitsu || (function(){(window.jitsuQ = window.jitsuQ || []).push(arguments);})</script>
     
 
+    
+    <script>
+    // Initialize the agent at application startup.
+    const fpPromise = import('https://fpcdn.io/v3/your-public-api-key')
+      .then(FingerprintJS => FingerprintJS.load())
+
+    // Get the visitor identifier when you need it.
+    fpPromise
+      .then(fp => fp.get())
+      .then(result => {
+        // This is the visitor identifier:
+        const visitorId = result.visitorId
+        console.log(visitorId)
+      })
+  </script>
+    
+    
      <style>
         @import url(https://fonts.googleapis.com/css?family=Bad+Script);
 
